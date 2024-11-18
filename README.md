@@ -7,7 +7,7 @@ En este hito se ha creado el backend de la aplicación.
 
 ## Requisitos
 
-* Se debe usar el framework [Express](http://expressjs.com/es/) y [MongoDB](https://www.mongodb.com/).
+* Se debe usar el framework [Express](http://expressjs.com/es/) y [PostgresSQL](https://www.postgresql.org/).
 * Se debe usar el lenguaje de programación [JavaScript](https://es.wikipedia.org/wiki/JavaScript).
 * Se debe usar [Node.js](https://nodejs.org/es/).
 * Se debe usar [NPM](https://www.npmjs.com/) para manejar las dependencias.
