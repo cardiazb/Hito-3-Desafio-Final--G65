@@ -1,0 +1,317 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Proyecto Final - DL",
+    "collectionId": "58c5d342-ee86-40dd-9506-611fe37f6d55",
+    "dateExported": "2024-11-18T15:16:47.658Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "35845acc-19fd-4744-903c-23f93472af93",
+            "colId": "58c5d342-ee86-40dd-9506-611fe37f6d55",
+            "containerId": "",
+            "name": "crearProducto",
+            "url": "http://localhost:3000/api/admin/crearProducto",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-11-17T21:36:11.107Z",
+            "modified": "2024-11-17T21:36:11.108Z",
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                },
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNhcmxvc2RpYXpiZWNhcjJAZ21haWwuY29tIiwidGlwbyI6IkNsaWVudGUiLCJpZCI6IjIzIiwibm9tYnJlIjoiQ2FybG9zIiwiYXBlbGxpZG8iOiJEaWF6IiwiaWF0IjoxNzMxODc2MjcwLCJleHAiOjE3MzI0ODEwNzB9.3hesx2s0wciOOISaSBxcZLS4pRzl8jktQFrhS5SBGeU",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"partnumber\": \"test\",\n  \"nombre\": \"coca-cola\",\n  \"precio\": 3500,\n  \"picture_url\": \"foto_url\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNhcmxvc2RpYXpiZWNhcjJAZ21haWwuY29tIiwidGlwbyI6IkNsaWVudGUiLCJpZCI6IjIzIiwibm9tYnJlIjoiQ2FybG9zIiwiYXBlbGxpZG8iOiJEaWF6IiwiaWF0IjoxNzMxODc2MjcwLCJleHAiOjE3MzI0ODEwNzB9.3hesx2s0wciOOISaSBxcZLS4pRzl8jktQFrhS5SBGeU"
+            }
+        },
+        {
+            "_id": "73be2dc1-f10b-4cbd-925e-5b386d180617",
+            "colId": "58c5d342-ee86-40dd-9506-611fe37f6d55",
+            "containerId": "",
+            "name": "Ver Productos",
+            "url": "http://localhost:3000/api/productos",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-11-17T21:38:46.706Z",
+            "modified": "2024-11-17T21:38:46.706Z",
+            "headers": []
+        },
+        {
+            "_id": "cc8b794d-3fdd-44e3-8553-d945d8a1a4f1",
+            "colId": "58c5d342-ee86-40dd-9506-611fe37f6d55",
+            "containerId": "",
+            "name": "VerPedidoPorID",
+            "url": "http://localhost:3000/api/pedidos/6",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-11-18T14:09:18.246Z",
+            "modified": "2024-11-18T14:09:18.246Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNhcmxvc2RpYXpiZWNhcjJAZ21haWwuY29tIiwidGlwbyI6IkNsaWVudGUiLCJpZCI6IjIzIiwibm9tYnJlIjoiQ2FybG9zIiwiYXBlbGxpZG8iOiJEaWF6IiwiaWF0IjoxNzMxODc2MjcwLCJleHAiOjE3MzI0ODEwNzB9.3hesx2s0wciOOISaSBxcZLS4pRzl8jktQFrhS5SBGeU"
+            }
+        },
+        {
+            "_id": "b966702a-4584-4f5a-93ce-c27c964f4e00",
+            "colId": "58c5d342-ee86-40dd-9506-611fe37f6d55",
+            "containerId": "",
+            "name": "Get Producto by Partnumber",
+            "url": "http://localhost:3000/api/producto/coca-cola",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-11-18T14:09:58.850Z",
+            "modified": "2024-11-18T14:09:58.850Z",
+            "headers": []
+        },
+        {
+            "_id": "9bf33121-090d-40a4-8fea-98a4d5a49775",
+            "colId": "58c5d342-ee86-40dd-9506-611fe37f6d55",
+            "containerId": "",
+            "name": "VerMisPedidos",
+            "url": "http://localhost:3000/api/pedidos",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-11-18T14:15:37.904Z",
+            "modified": "2024-11-18T14:15:37.905Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNhcmxvc2RpYXpiZWNhcjJAZ21haWwuY29tIiwidGlwbyI6IkNsaWVudGUiLCJpZCI6IjIzIiwibm9tYnJlIjoiQ2FybG9zIiwiYXBlbGxpZG8iOiJEaWF6IiwiaWF0IjoxNzMxODc2MjcwLCJleHAiOjE3MzI0ODEwNzB9.3hesx2s0wciOOISaSBxcZLS4pRzl8jktQFrhS5SBGeU"
+            }
+        },
+        {
+            "_id": "e9ecb74b-7c38-4cbc-8911-b140418d5755",
+            "colId": "58c5d342-ee86-40dd-9506-611fe37f6d55",
+            "containerId": "",
+            "name": "Modificar Status Pedido",
+            "url": "http://localhost:3000/api/admin/modificarStatusOrden/8",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2024-11-18T14:53:10.859Z",
+            "modified": "2024-11-18T14:53:10.859Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"status\":\"Entregado\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNhcmxvc2RpYXpiZWNhcjJAZ21haWwuY29tIiwidGlwbyI6IkNsaWVudGUiLCJpZCI6IjIzIiwibm9tYnJlIjoiQ2FybG9zIiwiYXBlbGxpZG8iOiJEaWF6IiwiaWF0IjoxNzMxODc2MjcwLCJleHAiOjE3MzI0ODEwNzB9.3hesx2s0wciOOISaSBxcZLS4pRzl8jktQFrhS5SBGeU"
+            }
+        },
+        {
+            "_id": "81da9b15-8a87-421f-9a5d-2462fba38af3",
+            "colId": "58c5d342-ee86-40dd-9506-611fe37f6d55",
+            "containerId": "",
+            "name": "Login",
+            "url": "http://localhost:3000/api/login",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-11-18T15:14:22.628Z",
+            "modified": "2024-11-18T15:14:22.628Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\" : \"carlosdiazbecar2@gmail.com\",\n  \"password\":\"carlosdiaz2\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "34d7faa4-64eb-479d-ab8f-643176a9e868",
+            "colId": "58c5d342-ee86-40dd-9506-611fe37f6d55",
+            "containerId": "",
+            "name": "Crear Usuario",
+            "url": "http://localhost:3000/api/crearUsuario",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-11-18T15:14:30.486Z",
+            "modified": "2024-11-18T15:14:30.486Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"carlosdiazbecar3@gmail.com\",\n  \"password\": \"carlosdiaz2\",\n  \"nombre\": \"Carlos\",\n  \"apellido\": \"Diaz\",\n  \"direccion\": \"direccion 1\",\n  \"telefono\": \"123456789\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "b5656893-9b48-4b26-b676-0e67f02aec68",
+            "colId": "58c5d342-ee86-40dd-9506-611fe37f6d55",
+            "containerId": "",
+            "name": "Crear Producto",
+            "url": "http://localhost:3000/api/admin/crearProducto",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2024-11-18T15:14:39.152Z",
+            "modified": "2024-11-18T15:14:39.152Z",
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                },
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNhcmxvc2RpYXpiZWNhcjJAZ21haWwuY29tIiwidGlwbyI6IkNsaWVudGUiLCJpZCI6IjIzIiwibm9tYnJlIjoiQ2FybG9zIiwiYXBlbGxpZG8iOiJEaWF6IiwiaWF0IjoxNzMxODc2MjcwLCJleHAiOjE3MzI0ODEwNzB9.3hesx2s0wciOOISaSBxcZLS4pRzl8jktQFrhS5SBGeU",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"partnumber\": \"coca-cola\",\n  \"nombre\": \"Coca Cola\",\n  \"precio\": 3500,\n  \"picture_url\": \"foto_url\",\n  \"detalle\": \"Coca Cola 3 Litros\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNhcmxvc2RpYXpiZWNhcjJAZ21haWwuY29tIiwidGlwbyI6IkNsaWVudGUiLCJpZCI6IjIzIiwibm9tYnJlIjoiQ2FybG9zIiwiYXBlbGxpZG8iOiJEaWF6IiwiaWF0IjoxNzMxODc2MjcwLCJleHAiOjE3MzI0ODEwNzB9.3hesx2s0wciOOISaSBxcZLS4pRzl8jktQFrhS5SBGeU"
+            }
+        },
+        {
+            "_id": "4cd65b23-6978-46b6-a463-a4bd384d867b",
+            "colId": "58c5d342-ee86-40dd-9506-611fe37f6d55",
+            "containerId": "",
+            "name": "Get Productos",
+            "url": "http://localhost:3000/api/productos",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-11-18T15:14:47.557Z",
+            "modified": "2024-11-18T15:14:47.557Z",
+            "headers": []
+        },
+        {
+            "_id": "d76b6c7b-be58-47f0-a045-a5ace917c1ea",
+            "colId": "58c5d342-ee86-40dd-9506-611fe37f6d55",
+            "containerId": "",
+            "name": "Get Producto by Partnumber",
+            "url": "http://localhost:3000/api/producto/coca-cola",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2024-11-18T15:14:56.956Z",
+            "modified": "2024-11-18T15:14:56.956Z",
+            "headers": []
+        },
+        {
+            "_id": "7370ffde-0d66-4c4f-ba77-d17d6a7cbf26",
+            "colId": "58c5d342-ee86-40dd-9506-611fe37f6d55",
+            "containerId": "",
+            "name": "Modificar Producto",
+            "url": "http://localhost:3000/api/admin/modificarProducto/5",
+            "method": "PUT",
+            "sortNum": 120000,
+            "created": "2024-11-18T15:15:02.551Z",
+            "modified": "2024-11-18T15:15:02.551Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"partnumber\": \"coca-cola\",\n    \"nombre\": \"Coca Cola\",\n    \"precio\": 3500,\n    \"picture_url\": \"foto_url\",\n    \"detalle\": \"Coca Cola 3 Lts\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNhcmxvc2RpYXpiZWNhcjJAZ21haWwuY29tIiwidGlwbyI6IkNsaWVudGUiLCJpZCI6IjIzIiwibm9tYnJlIjoiQ2FybG9zIiwiYXBlbGxpZG8iOiJEaWF6IiwiaWF0IjoxNzMxODc2MjcwLCJleHAiOjE3MzI0ODEwNzB9.3hesx2s0wciOOISaSBxcZLS4pRzl8jktQFrhS5SBGeU"
+            }
+        },
+        {
+            "_id": "6ee732db-3d5f-494f-837a-19e72c256715",
+            "colId": "58c5d342-ee86-40dd-9506-611fe37f6d55",
+            "containerId": "",
+            "name": "VerMisPedidos",
+            "url": "http://localhost:3000/api/pedidos",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2024-11-18T15:15:08.766Z",
+            "modified": "2024-11-18T15:15:08.766Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNhcmxvc2RpYXpiZWNhcjJAZ21haWwuY29tIiwidGlwbyI6IkNsaWVudGUiLCJpZCI6IjIzIiwibm9tYnJlIjoiQ2FybG9zIiwiYXBlbGxpZG8iOiJEaWF6IiwiaWF0IjoxNzMxODc2MjcwLCJleHAiOjE3MzI0ODEwNzB9.3hesx2s0wciOOISaSBxcZLS4pRzl8jktQFrhS5SBGeU"
+            }
+        },
+        {
+            "_id": "0c975c41-49bc-4e3d-9860-4ea6f2ecb93d",
+            "colId": "58c5d342-ee86-40dd-9506-611fe37f6d55",
+            "containerId": "",
+            "name": "CrearPedido",
+            "url": "http://localhost:3000/api/pedidos",
+            "method": "POST",
+            "sortNum": 140000,
+            "created": "2024-11-18T15:15:15.301Z",
+            "modified": "2024-11-18T15:15:15.301Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"total\":15000,\n  \"tipo_de_pago\":\"Efectivo\",\n  \"delivery\": false,\n  \"productos\": [\n    {\n      \"producto_id\":4,\n      \"cantidad\":2\n    },\n    {\n      \"producto_id\":5,\n      \"cantidad\":1\n    }\n    ]\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNhcmxvc2RpYXpiZWNhcjJAZ21haWwuY29tIiwidGlwbyI6IkNsaWVudGUiLCJpZCI6IjIzIiwibm9tYnJlIjoiQ2FybG9zIiwiYXBlbGxpZG8iOiJEaWF6IiwiaWF0IjoxNzMxODc2MjcwLCJleHAiOjE3MzI0ODEwNzB9.3hesx2s0wciOOISaSBxcZLS4pRzl8jktQFrhS5SBGeU"
+            }
+        },
+        {
+            "_id": "7317a45b-7a81-4b4b-83dd-22cb70f4d838",
+            "colId": "58c5d342-ee86-40dd-9506-611fe37f6d55",
+            "containerId": "",
+            "name": "VerPedidoPorID",
+            "url": "http://localhost:3000/api/pedidos/6",
+            "method": "GET",
+            "sortNum": 150000,
+            "created": "2024-11-18T15:15:22.227Z",
+            "modified": "2024-11-18T15:15:22.227Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNhcmxvc2RpYXpiZWNhcjJAZ21haWwuY29tIiwidGlwbyI6IkNsaWVudGUiLCJpZCI6IjIzIiwibm9tYnJlIjoiQ2FybG9zIiwiYXBlbGxpZG8iOiJEaWF6IiwiaWF0IjoxNzMxODc2MjcwLCJleHAiOjE3MzI0ODEwNzB9.3hesx2s0wciOOISaSBxcZLS4pRzl8jktQFrhS5SBGeU"
+            }
+        },
+        {
+            "_id": "f8728220-d9a6-4b8b-9f48-7505b2af90b5",
+            "colId": "58c5d342-ee86-40dd-9506-611fe37f6d55",
+            "containerId": "",
+            "name": "Mensaje de Bienvenida",
+            "url": "http://localhost:3000/api",
+            "method": "GET",
+            "sortNum": 160000,
+            "created": "2024-11-18T15:15:51.393Z",
+            "modified": "2024-11-18T15:15:51.393Z",
+            "headers": []
+        },
+        {
+            "_id": "c86da247-0d64-4df4-8f6a-b19f40a52223",
+            "colId": "58c5d342-ee86-40dd-9506-611fe37f6d55",
+            "containerId": "",
+            "name": "Modificar Status Pedido",
+            "url": "http://localhost:3000/api/admin/modificarStatusOrden/8",
+            "method": "PUT",
+            "sortNum": 170000,
+            "created": "2024-11-18T15:15:57.998Z",
+            "modified": "2024-11-18T15:15:57.998Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"status\":\"Entregado\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNhcmxvc2RpYXpiZWNhcjJAZ21haWwuY29tIiwidGlwbyI6IkNsaWVudGUiLCJpZCI6IjIzIiwibm9tYnJlIjoiQ2FybG9zIiwiYXBlbGxpZG8iOiJEaWF6IiwiaWF0IjoxNzMxODc2MjcwLCJleHAiOjE3MzI0ODEwNzB9.3hesx2s0wciOOISaSBxcZLS4pRzl8jktQFrhS5SBGeU"
+            }
+        }
+    ],
+    "ref": "PcBgklH6-r0U1dKDf2rU5ntUfEIdsJO_AJrnLJTwWlvyExc1LhoamMNR61pgaczggpIfbsPKhacL8Oe7FKJk9g"
+}
