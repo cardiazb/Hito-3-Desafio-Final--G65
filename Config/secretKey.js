@@ -1,6 +1,6 @@
 
 
-const SECRET_KEY = 'a0c7d4cd71661258b52ee4a5ac19b8ec6304597a76ada08c39e6348f5d3f94a8';
+const SECRET_KEY = 'a0c7aacd71661bb8b52ee4acac19b8ec6304597a76ada08c39e6348f5d000000';
 const DB_CONFIG = {
   user: 'postgres',
   password: 'postgres',
