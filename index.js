@@ -9,7 +9,7 @@ const corsOptions = {
 
 const Admin = 'Cliente';
 
-app.use(cors(corsOptions));
+//app.use(cors(corsOptions));
 
 app.use(express.json());
 
