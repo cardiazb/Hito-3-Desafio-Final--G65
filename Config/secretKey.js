@@ -5,7 +5,7 @@ const DB_CONFIG = {
   user: 'pizzeria_bd_c2ru_user',
   password: 'RRaWdy9braEsHyq2qKPTnjDozv26ftFS',
   database: 'pizzeria_bd_c2ru',
-  host: 'dpg-ct0uq9jtq21c73ejfci0-a.oregon-postgres.render.com',
+  host: 'https://dpg-ct0uq9jtq21c73ejfci0-a.oregon-postgres.render.com',
   port: 5432
 };
 const SALT_ROUNDS = 10;
