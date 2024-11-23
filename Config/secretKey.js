@@ -2,11 +2,7 @@
 
 const SECRET_KEY = 'a0c7aacd71661bb8b52ee4acac19b8ec6304597a76ada08c39e6348f5d000000';
 const DB_CONFIG = {
-  user: 'pizzeria_bd_c2ru_user',
-  password: 'RRaWdy9braEsHyq2qKPTnjDozv26ftFS',
-  database: 'pizzeria_bd_c2ru',
-  host: 'https://dpg-ct0uq9jtq21c73ejfci0-a.oregon-postgres.render.com',
-  port: 5432
+  postgresql://pizzeria_bd_c2ru_user:RRaWdy9braEsHyq2qKPTnjDozv26ftFS@dpg-ct0uq9jtq21c73ejfci0-a.oregon-postgres.render.com/pizzeria_bd_c2ru?ssl=true
 };
 const SALT_ROUNDS = 10;
 
