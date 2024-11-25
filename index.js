@@ -3,13 +3,13 @@ const app = express();
 
 const cors = require('cors');
 const corsOptions = {
-  origin: 'http://localhost:3000',
+  origin: 'https://pizzeria-napoli.vercel.app',
   credentials: true,
 };
 
 const Admin = 'Cliente';
 
-//app.use(cors(corsOptions));
+app.use(cors(corsOptions));
 
 app.use(express.json());
 
