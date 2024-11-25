@@ -29,6 +29,7 @@ getMyOrders } = require('./Models/consultas');
 //Rutas Login
 
 app.post('/api/login', checkCredenciales, crearToken);
+app.post('/login', checkCredenciales, crearToken);
 
 app.post('/api/crearUsuario', async (req, res) => {
   const usuario = req.body;

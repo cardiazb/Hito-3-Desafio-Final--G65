@@ -27,7 +27,7 @@ const crearToken = async (req, res, next) => {
     }
     else {
       const token = Token(user);
-      res.status(201).json({ token });
+      res.status(201).json({ user:user.email, token: token });
     }
   } catch (err) {
     console.log(err);
