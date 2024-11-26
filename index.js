@@ -3,7 +3,7 @@ const app = express();
 
 const cors = require('cors');
 const corsOptions = {
-  origin: 'https://pizzeria-napoli.vercel.app',
+  origin: ['http://localhost:5173', 'http://localhost:3000','https://pizzeria-napoli.onrender.com','https://pizzeria-napoli.vercel.app'],
   credentials: true,
 };
 
