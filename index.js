@@ -7,7 +7,7 @@ const corsOptions = {
   credentials: true,
 };
 
-const Admin = 'Cliente';
+const Admin = 'admin';
 
 app.use(cors(corsOptions));
 
