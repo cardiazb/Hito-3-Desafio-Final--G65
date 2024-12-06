@@ -134,7 +134,9 @@ const verificarCredenciales = async (usuario) => {
       productos.forEach(async (producto) => {
         const {producto_id, cantidad} = producto;
         const query = format("INSERT INTO detalle_pedido (pedido_id, producto_id, cantidad) VALUES (%L, %L, %L)", result.rows[0].id, producto_id, cantidad);
-        await pool.query(query);
+        console.log(query);
+        const resultDetalle = await pool.query(query);
+        console.log(resultDetalle);
       });
       return order;
       

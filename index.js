@@ -7,8 +7,6 @@ const corsOptions = {
   credentials: true,
 };
 
-const Admin = 'admin';
-
 app.use(cors(corsOptions));
 
 app.use(express.json());
@@ -74,6 +72,8 @@ app.post('/api/admin/crearProducto', verifyToken, async (req, res) =>{
     }
     }
 });
+
+const Admin = 'admin';
 
 app.put('/api/admin/modificarProducto/:id', verifyToken, async (req, res) =>{
     const { userId, tipo } = req;
