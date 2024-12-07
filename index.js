@@ -23,6 +23,7 @@ createOrder,
 getOrderDetailsById,
 modificarStatusOrden,
 updateUserProfile,
+getUserProfile,
 getMyOrders } = require('./Models/consultas');
 
 //Rutas Login
