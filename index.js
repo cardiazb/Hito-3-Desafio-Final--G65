@@ -22,6 +22,7 @@ modificarProducto,
 createOrder,
 getOrderDetailsById,
 modificarStatusOrden,
+updateUserProfile,
 getMyOrders } = require('./Models/consultas');
 
 //Rutas Login
@@ -137,6 +138,18 @@ app.post('/api/pedidos', verifyToken, async (req, res) =>{
     try {
         const pedidoCreado = await createOrder(pedido);
         res.status(201).json({pedido: pedidoCreado, message: "Pedido creado con exito"});
+    } catch (err) {
+        console.log(err);
+        res.status(err.code).json(err.message);
+    }
+});
+
+app.post('/api/updateUserProfile',verifyToken, async (req, res) =>{
+    const { userId, tipo } = req;
+    const { nombre, apellido, direccion, telefono } = req.body;
+    try {
+        const user = await updateUserProfile(userId, nombre, apellido, direccion, telefono);
+        res.status(200).json(user);
     } catch (err) {
         console.log(err);
         res.status(err.code).json(err.message);

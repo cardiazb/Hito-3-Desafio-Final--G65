@@ -149,7 +149,20 @@ const verificarCredenciales = async (usuario) => {
     }
   };
   
-  
+  const updateUserProfile = async (userId, nombre, apellido, direccion, telefono) => {
+    const query = format("UPDATE clientes SET nombre = %L, apellido = %L, direccion = %L, telefono = %L WHERE usuario_id = %L", nombre, apellido, direccion, telefono, userId);
+    try {
+      const result = await pool.query(query);
+      return result.rows;
+    } catch (err) {
+      console.log(err);
+      if (err.code === "3D000") {
+        throw { code: 500, message: "Error interno del servidor" };
+      }
+      throw { code: 400, message: "Error al actualizar perfil del usuario" };
+    }
+  };
+
   const getMyOrders = async (usuario_id) => {
     const query = format("SELECT * from pedidos where usuario_id = %L", usuario_id);
     try {
@@ -265,6 +278,7 @@ const verificarCredenciales = async (usuario) => {
     getMyOrders,
     createOrder,
     getOrderDetailsById,
-    modificarStatusOrden
+    modificarStatusOrden,
+    updateUserProfile
   };
 
