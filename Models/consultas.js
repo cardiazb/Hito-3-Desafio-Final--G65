@@ -163,6 +163,20 @@ const verificarCredenciales = async (usuario) => {
     }
   };
 
+  const getUserProfile = async (userId) => {
+    const query = format("SELECT * from clientes where usuario_id = %L", userId);
+    try {
+      const result = await pool.query(query);
+      return result.rows;
+    } catch (err) {
+      console.log(err);
+      if (err.code === "3D000") {
+        throw { code: 500, message: "Error interno del servidor" };
+      }
+      throw { code: 400, message: "Error al obtener perfil del usuario" };
+    }
+  };
+
   const getMyOrders = async (usuario_id) => {
     const query = format("SELECT * from pedidos where usuario_id = %L", usuario_id);
     try {
@@ -279,6 +293,7 @@ const verificarCredenciales = async (usuario) => {
     createOrder,
     getOrderDetailsById,
     modificarStatusOrden,
-    updateUserProfile
+    updateUserProfile,
+    getUserProfile
   };
 

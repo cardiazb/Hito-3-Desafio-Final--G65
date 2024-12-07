@@ -156,6 +156,12 @@ app.post('/api/updateUserProfile',verifyToken, async (req, res) =>{
     }
 });
 
+app.get('/api/userProfile', verifyToken, async (req, res) =>{
+    const { userId, tipo } = req;
+    const user = await getUserProfile(userId);
+    res.status(200).json(user);
+});
+
 app.get('/api/pedidos/:pedido_id', verifyToken, async (req, res) =>{
     const { pedido_id } = req.params;
     const pedido = await getOrderDetailsById(pedido_id);
